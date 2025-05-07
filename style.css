@@ -130,7 +130,6 @@
   }
 
   #next-btn{
-    margin-left: 230px;
     background:#F0C987;
     border-radius: 5px;
     font-weight: bolder ;
@@ -163,4 +162,37 @@
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .correct {
+  background-color: #c8e6c9; 
+  border-radius: 5px;
+  padding: 5px;
+  color: #3C153B;
+ }
+
+ .incorrect {
+  background-color: #F0C987; 
+  border-radius: 5px;
+  padding: 5px;
+  color: #3C153B;
+ }
+
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+    }
+
+    #question-box,
+    #solution {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h3 {
+      font-size: 1.1rem;
+    }
   }
