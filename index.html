@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Quiz Application</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <!-- Header box -->
+    <div id="header">
+        <h1>Front-End Basic Quiz</h1>
+        <div></div>
+        <h3>HTML, CSS and Javascript</h3>
+    </div>
+
+    <!-- question container -->
+  <div id="quiz-container">
+    <div id="question-box">
+        <div id="progress-box">
+            <div id="progress"></div>
+        </div>
+        <h3 id="question">Your question is here</h3>
+        <!-- counter -->
+        <span id="counter">1/10</span>
+    </div>
+
+    <!-- options -->
+    <div id="solution">
+        <div class="options">
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="a" />
+                    <label for="a" id="option_1">Quiz Option</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="b" />
+                    <label for="b" id="option_2">Quiz Option</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="c" />
+                    <label for="c" id="option_3">Quiz Option</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="d" />
+                    <label for="d" id="option_4">Quiz Option</label>
+                </li>
+            </ul>
+        </div>
+        <!-- submit button -->
+        <button class="btn" id="next-btn" >Submit</button>
+    </div>
+
+    <!-- result section -->
+    <div class="result-container" id="result-container">
+        <div class="result-icon" id="result-icon"></div>
+        <h2 class="score-text" id="score-text"></h2>
+        <p class="feedback" id="feedback"></p>
+        <button class="btn restart-btn" id="restart-btn">Take Quiz Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
