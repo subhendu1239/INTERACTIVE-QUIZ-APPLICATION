@@ -12,9 +12,9 @@
 
 *MENTOR*: NEELA SANTOSH
 
-## This repository contains a fully functional Quiz Application developed as part of my internship project using HTML, CSS, and JavaScript. The main goal of this project was to build a responsive and interactive quiz platform that tests users' knowledge of front-end technologies—specifically HTML, CSS, and JavaScript—and provides instant feedback, scoring, and a dynamic user interface.
+# This repository contains a fully functional Quiz Application developed as part of my internship project using HTML, CSS, and JavaScript. The main goal of this project was to build a responsive and interactive quiz platform that tests users' knowledge of front-end technologies—specifically HTML, CSS, and JavaScript—and provides instant feedback, scoring, and a dynamic user interface.
 
-## Tech Stack
+# Tech Stack
   
 HTML5 for structuring content.
 
@@ -24,7 +24,7 @@ Vanilla JavaScript (ES6) for interactivity and dynamic behavior.
 
 Visual Studio Code as the primary development environment.
 
-## Features
+# Features
   
 -> 50 Handcrafted Questions on HTML, CSS, and JavaScript.
 
@@ -44,7 +44,7 @@ Visual Studio Code as the primary development environment.
 
 -> Clean, Commented Code – Code is structured and commented for better understanding and scalability.
 
-## Development Environment
+# Development Environment
 
 I used Visual Studio Code throughout the development process. VS Code's live server extension allowed me to test changes in real-time. The code editor's intelligent syntax highlighting, linting, and debugging tools made it easy to catch errors and organize code efficiently. I also made use of:
 
@@ -54,7 +54,7 @@ Git Integration for source control and version tracking
 
 Extensions like Prettier and Live Server to streamline the development experience
 
-## Learning Outcomes
+# Learning Outcomes
 
 -> This project helped me:
 
@@ -66,7 +66,7 @@ Understand the workflow of real-world projects using version control and IDE too
 
 Gain confidence in building user-centric features with clean UI/UX principles.
 
-## Challenges Faced & How I Overcame Them
+# Challenges Faced & How I Overcame Them
 During the development of this quiz application, I encountered several challenges that tested both my technical knowledge and problem-solving skills. As an intern, this project served as a great learning experience and gave me a taste of real-world web development scenarios. Here are some of the key challenges I faced:
 
 -> Initially, I found it difficult to dynamically update quiz content—such as loading questions, updating options, and handling user selections—without reloading the page. I had to revise my understanding of the Document Object Model (DOM) and how JavaScript interacts with it. By carefully using functions like querySelector, innerText, and event listeners, I was able to dynamically render questions and options on each click of the "Next" button.
@@ -79,8 +79,8 @@ During the development of this quiz application, I encountered several challenge
 
 ->Ensuring the quiz was not only functional but also accessible to users with different interaction patterns was another learning curve. I adjusted the radio button inputs and labels to ensure they could be selected by clicking anywhere on the option. This required adjusting both HTML structure and CSS styling for better usability.
 
-## Subhendu Sekhar Sahu
-## Intern | Front-End Developer
+# Subhendu Sekhar Sahu
+# Intern | Front-End Developer
 
 ## OUTPUT
 
