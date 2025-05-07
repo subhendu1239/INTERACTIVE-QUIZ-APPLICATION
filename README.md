@@ -12,6 +12,8 @@
 
 *MENTOR*: NEELA SANTOSH
 
+## DESCRIPTION
+
 * This repository contains a fully functional Quiz Application developed as part of my internship project using HTML, CSS, and JavaScript. The main goal of this project was to build a responsive and interactive quiz platform that tests users' knowledge of front-end technologies—specifically HTML, CSS, and JavaScript—and provides instant feedback, scoring, and a dynamic user interface.
 
 * Tech Stack
