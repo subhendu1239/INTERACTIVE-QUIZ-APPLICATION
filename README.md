@@ -81,3 +81,7 @@ During the development of this quiz application, I encountered several challenge
 
 ## Subhendu Sekhar Sahu
 ## Intern | Front-End Developer
+
+## OUTPUT
+
+![Image](https://github.com/user-attachments/assets/d21eb558-e4f7-4181-9bcd-05ea1b3e3ca0)
