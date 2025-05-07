@@ -245,6 +245,11 @@ const quizData = [
       options: ["typeof", "type()", "checktype()", "isType()"],
       correct: 0,
     },
+    {
+      question: "What will `typeof NaN` return in JavaScript?",
+      options: ["number", "NaN", "undefined", "object"],
+      correct: 0
+    },
   ];
   
 
@@ -347,30 +352,30 @@ nextBtn.addEventListener("click", () => {
     return;
   }
 
-  const correctIndex = quizData[currentQuestion].correct;
-  const labels = [
-    document.getElementById("option_1"),
-    document.getElementById("option_2"),
-    document.getElementById("option_3"),
-    document.getElementById("option_4"),
-  ];
+  feedbackEl.textContent = "";
 
-  //Highlight correct or Incorrect
-  labels.forEach((label, index) => {
-    if (index === correctIndex) {
-      label.classList.add("correct");
-    } else if (index === selectedOptionIndex) {
-      label.classList.add("incorrect");
-    }
-  })
+  // select label element
+  const selectedLabel = document.getElementById(`option_${selectedOptionIndex + 1}`);
+  const correctLabel = document.getElementById(`option_${quizData[currentQuestion].correct + 1}`);
+
+  const correctIndex = quizData[currentQuestion].correct;
 
   if(selectedOptionIndex === correctIndex){
     score++;
-    feedbackEl.textContent = "";
-   };
+    selectedLabel.classList.add("correct");
+   }else {
+    selectedLabel.classList.add("incorrect");
+    correctLabel.classList.add("correct");
+  };
 
-
+  // Delay 
   setTimeout(() => {
+
+    // Remove all visual feedback
+    document.querySelectorAll("label").forEach(label => {
+      label.classList.remove("correct", "incorrect");
+    });
+
     currentQuestion++;
     deselectOption();
     if (currentQuestion < quizData.length) loadQuestion();
@@ -378,18 +383,19 @@ nextBtn.addEventListener("click", () => {
       showResults();
       nextBtn.style.display = "none";
     } 
-  }, 1000);
+  }, 1000);   // 1 second delay for visual feedback
 });
 
 function restartQuiz() {
   currentQuestion = 0;
   score = 0;
+  feedbackEl.textContent = "";
 
   document.querySelector("#solution").style.display = "block";
   questionE1.style.display = "block"
   resultContainer.style.display = "none";
   nextBtn.style.display = "block";
-
+  
   // Reset all options
   deselectOption();
   loadQuestion();
